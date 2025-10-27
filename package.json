@@ -5,11 +5,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm run build:esbuild && pnpm run build:rolldown && pnpm run build:rollup && pnpm run build:tsc",
+    "build": "pnpm run --sequential '/build:/'",
     "build:esbuild": "node esbuild.js",
     "build:rolldown": "rolldown -c rolldown.config.js",
     "build:rollup": "rollup -c rollup.config.js",
-    "build:tsc": "tsc -p tsconfig.tsc.json"
+    "build:tsc": "tsc -p tsconfig.tsc.json",
+    "build:tsdown": "tsdown"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "rolldown": "1.0.0-beta.44",
     "rolldown-plugin-dts": "^0.17.1",
     "rollup": "^4.52.5",
+    "tsdown": "^0.15.10",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3"
   }
