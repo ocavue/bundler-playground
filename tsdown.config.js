@@ -1,7 +1,9 @@
+// @ts-check
+
 import { defineConfig } from "tsdown";
 
 export default defineConfig({
-  input: ["src/index.ts"],
+  entry: ["src/index.ts"],
   outDir: "dist/tsdown",
   dts: true,
 });

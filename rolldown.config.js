@@ -1,5 +1,7 @@
+// @ts-check
+
 import { defineConfig } from "rolldown";
-import {dts} from 'rolldown-plugin-dts';
+import { dts } from "rolldown-plugin-dts";
 
 export default defineConfig({
   input: "src/index.ts",
