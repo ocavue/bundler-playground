@@ -1,2 +1,2 @@
-declare const _default: import("tsdown").UserConfig & import("tsdown").UserConfig[] & (import("tsdown").UserConfigFn & import("tsdown").UserConfigExport);
+declare const _default: import("tsdown").UserConfig;
 export default _default;
