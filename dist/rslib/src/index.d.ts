@@ -9,4 +9,5 @@ export interface Person {
     name: string;
     age: number;
 }
-export { shared } from './shared.js';
+export { shared, MyEnum, MyConstEnum, functionThatUsesEnumsShared } from './shared.js';
+export declare function functionThatUsesEnumsIndex(): void;

@@ -1,5 +1,16 @@
 //#region src/shared.d.ts
 declare const shared = 1;
+declare enum MyEnum {
+  ONE = 1,
+  TWO = 2,
+  THREE = 3
+}
+declare const enum MyConstEnum {
+  Four = 4,
+  Five = 5,
+  Six = 6
+}
+declare function functionThatUsesEnumsShared(): void;
 //#endregion
 //#region src/index.d.ts
 /**
@@ -13,5 +24,6 @@ interface Person {
   name: string;
   age: number;
 }
+declare function functionThatUsesEnumsIndex(): void;
 //#endregion
-export { Person, a, shared };
+export { MyConstEnum, MyEnum, Person, a, functionThatUsesEnumsIndex, functionThatUsesEnumsShared, shared };
